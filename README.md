@@ -1,5 +1,14 @@
 # Clinical Hypertension Risk Assessment
 
+<div align="center">
+
+[![CI Verified](https://github.com/Amanatar/hypertension-risk-assessment/actions/workflows/ci-verify.yml/badge.svg)](https://github.com/Amanatar/hypertension-risk-assessment/actions)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+</div>
+
 Production-oriented clinical risk stratification interface mapping multi-factor cardiovascular telemetry into four clinical stages: Normal, Stage-1 Hypertension, Stage-2 Hypertension, and Hypertensive Crisis.
 
 ## Architecture
