@@ -8,12 +8,12 @@ app = Flask(__name__)
 app.secret_key = 'your-secret-key-change-in-production'
 
 # --- 1. Load Trained Model ---
+MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logreg_model.pkl")
 try:
-    # Ensure the model file name matches what you saved earlier (e.g., 'logreg_model.pkl')
-    model = joblib.load("logreg_model.pkl")
+    model = joblib.load(MODEL_PATH)
     print("Model loaded successfully.")
-except FileNotFoundError:
-    print("Warning: Model file not found. Using dummy predictions for demo.")
+except Exception as e:
+    print(f"Warning: Model could not be loaded ({e}). Using dummy predictions for demo.")
     model = None
 
 # --- 2. Mappings & Configuration ---
